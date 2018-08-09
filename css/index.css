@@ -1,0 +1,184 @@
+/*
+* @Author: Administrator
+* @Date:   2018-08-03 09:35:48
+* @Last Modified by:   Administrator
+* @Last Modified time: 2018-08-06 14:24:50
+*/
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+html,body{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+body{
+	width: 100%;
+	height: 100%;
+	background: url('../img/qiang.png');
+	background-size: contain;
+}
+header{
+	width: 100%;
+	height: 7.94rem;
+	background: url('../img/scen.png');
+	background-size: contain;
+	position: relative;
+}
+header .letter{
+	position: absolute;
+	width: 0.53rem;
+	height: 0.77rem;
+	top: 1rem;
+	left: 0;
+	background-size: contain;
+}
+nav{
+	width: 100%;
+	height: 5.22rem;
+	position: fixed;
+	bottom: 0;
+	background: url('../img/Key.png');
+	background-size: contain;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.keybox{
+	width: 7.02rem;
+	height: 4rem;
+	background: rgba(26, 68, 205, .8);
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-content: center;
+}
+.keybox .btn{
+	width: 0.5rem;
+	height: 0.8rem;
+	background: url('../img/Letter.png');
+	background-size: contain;
+	font-size: 0.3rem;
+	text-align: center;
+	line-height: 0.8rem;
+	margin: 0.28rem 0.1rem;
+}
+.keybox .btn:nth-child(11){
+	margin-left: 0.2rem;
+}
+.clound{
+	width: 4.95rem;
+	height: 0.56rem;
+	position: fixed;
+	top: 0.9rem;
+	left: 0;
+	background: url('../img/clound_06.png');
+	background-size: contain;
+	animation: move 2s infinite alternate;
+}
+@keyframes move{
+	to{
+		
+		transform: translate(2.6rem, 0);
+	}
+}
+.music{
+	position: fixed;
+	width: 0.5rem;
+	height: 0.5rem;
+	background: url('../img/Aplay.png');
+	background-size: contain;
+	top: 0.4rem;
+	right: 0.24rem;
+}
+.nomusic{
+	position: fixed;
+	width: 0.5rem;
+	height: 0.5rem;
+	background: url('../img/Apause.png');
+	background-size: contain;
+	top: 0.4rem;
+	right: 0.24rem;
+	z-index: 2;
+	display: none;
+}
+.life{
+	width: 1.22rem;
+	height: 1.21rem;
+	position: fixed;
+	right: 0.24rem;
+	top: 2.15rem;
+	background: url('../img/Health.png');
+	background-size: contain;
+	font-size: 0.4rem;
+	text-align: center;
+	line-height: 0.7rem;
+}
+.score{
+	width: 1.22rem;
+	height: 1.21rem;
+	position: fixed;
+	right: 0.24rem;
+	top: 3.49rem;
+	background: url('../img/Point.png');
+	background-size: contain;
+	font-size: 0.4rem;
+	text-align: center;
+	line-height: 0.7rem;
+}
+.kai{
+	width: 1.22rem;
+	height: 1.21rem;
+	position: fixed;
+	right: 0.24rem;
+	top: 5.13rem;
+	background: url('../img/Pause.png');
+	background-size: contain;
+	display: none;
+}
+.guan{
+	width: 1.22rem;
+	height: 1.21rem;
+	position: fixed;
+	right: 0.24rem;
+	top: 5.13rem;
+	background: url('../img/Play.png');
+	background-size: contain;
+	
+}
+.end{
+	width: 4.30rem;
+	height: 4.49rem;
+	position: absolute;
+	top: 2rem;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	background-image: url('../img/gameover.png');
+	background-size: contain;
+	display: none;
+}
+.end .text{
+	width: 0.6rem;
+	height: 0.6rem;
+	position: absolute;
+	color: red;
+	top: 2.6rem;
+	left: 2.2rem;
+	line-height: 0.6rem;
+	font-size: 0.6rem;
+	text-align: center;
+}
+.end .replay{
+	width: 2.63rem;
+	height: 0.6rem;
+	top: 3.5rem;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	position: absolute;
+	background-image: url('../img/btn.png');
+	background-size: contain;
+}
